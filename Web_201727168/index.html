@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MultimediaHomework</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--
+<meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+-->
+    <!---- start-smoth-scrolling---->
+    <!--
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
+    </script>
+    -->
+    <script language="JavaScript">
+        function realSysTime(clock) {
+            var now = new Date();
+            var year = now.getFullYear(); //获取年份
+            var month = now.getMonth(); //获取月份
+            var date = now.getDate(); //获取日期
+            var day = now.getDay(); //获取星期
+            var hour = now.getHours(); //获取小时
+            var minute = now.getMinutes(); //获取分钟
+            var seconds = now.getSeconds(); //获取秒
+            month = month + 1;
+            var arr_week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+            var week = arr_week[day];
+            var time = year + "年" + month + "月" + date + "日 " + week + " " + hour + ":" + minute + ":" + seconds;
+            clock.innerHTML = "当前时间：" + time;
+        }
+
+        function show() {
+            window.setInterval("realSysTime(clock)", 1000);
+        }
+    </script>
+
+    <!---End-smoth-scrolling---->
+
+</head>
+<body onload="show()" wind>
+<div id='clock'></div>
+<!--start-header-section-->
+<div class="header-section">
+    <div class="continer">
+        <img src="images/photo.JPG">
+        <h1>hello..<span>!</span></h1>
+        <p>My name is 秘如玄 & ID : 201727168</p>
+        <a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom"
+                                                    aria-hidden="true"></span></a>
+    </div>
+</div>
+<!--end header-section-->
+<!--start-study-section-->
+<div class="hobby-section">
+    <div class="container">
+        <div class="hobby-grids">
+            <div class="col-md-6 hobby-grid">
+                <h3>hobbies..<span>!</span></h3>
+                <div class="hobby1">
+                    <p>网页制作 <label>( (●ˇ∀ˇ●) )</label></p>
+                    <p>图像处理 <label>( (ง •_•)ง )</label></p>
+                    <p>C++语法 <label>( (っ °Д °;)っ )</label></p>
+                    <p>设计模式 <label>( \(￣︶￣*\)) )</label></p>
+                    <p>Linux<label>( （〃｀ 3′〃） )</label></p>
+                    <p>C++ is the best language! <label>( ヽ(*。>Д<)o゜ )</label></p>
+                </div>
+            </div>
+            <div class="col-md-6 hobby-grid">
+                <h3>skills..<span>!</span></h3>
+                <div class="hobby2">
+                    <h4>html</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                    </div>
+                    <h4>css</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                    <h4>js</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div>
+                    <h4>C++</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <span class="sr-only">10% Complete (danger)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--end hobby-section-->
+    <!--start-address-section-->
+    <div class="social-icons">
+        <h3>Project Address</h3>
+        <div class="container">
+            <div class="col-md-4 face">
+                <p><i class="google"> </i> ruxuan.bi@gmail.com</p>
+                <h4>Gmail邮箱</h4>
+            </div>
+        </div>
+    </div>
+    <!--end-social-section-->
+    <!--start-contact-section-->
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <h3>contact me</h3>
+            <div class="contact-details">
+                <form>
+                    <div class="col-md-6 contact-left">
+                        <input type="text" class="text" value="Name *" onfocus="this.value = '';"
+                               onblur="if (this.value == '') {this.value = 'Name *';}">
+                        <input type="text" class="text" value="Email *" onfocus="this.value = '';"
+                               onblur="if (this.value == '') {this.value = 'Email *';}">
+                        <input type="text" class="text" value="phone *" onfocus="this.value = '';"
+                               onblur="if (this.value == '') {this.value = 'Phone *';}">
+                    </div>
+                    <div class="col-md-6 contact-right">
+                        <textarea value="Message" onfocus="this.value = '';"
+                                  onblur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
+                        <input type="submit" value="Send Message"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end-contact-section-->
+    <!--start-map-section-->
+    <div class="baidu-map">
+        <iframe src="https://map.baidu.com/@13384902,4275965,11.75z"></iframe>
+    </div>
+    <!--end-map-section-->
+    <!--start-footer-section-->
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+				<p> <a target="_blank" href="https://github.com/SuperBRX/WebLearning/tree/master/Multimedia" title="GitHub地址"><strong>GitHub</strong></a>
+                </p>
+            </div>
+            <!--
+            <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+                  containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+             };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    -->
+            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+    </div>
+    <!--end-footer-section-->
+</div>
+</body>
+</html> 
