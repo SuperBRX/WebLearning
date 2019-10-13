@@ -14,3 +14,7 @@ function realSysTime(clock) {
     let time = year + "年" + month + "月" + date + "日" + week + "  " + hour + ":" + minute + ":" + seconds;
     clock.innerHTML = "当前时间" + time;
 }
+
+function show() {
+    window.setInterval("realSysTime(clock)",1000);
+}
